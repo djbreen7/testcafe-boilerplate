@@ -7,7 +7,6 @@ let searchStr: string;
 
 fixture(`GOOGLE EXAMPLE`)
     .before(async ctx => {
-        console.log('hello');
         searchStr = "Chicken Soup";
     })
     .beforeEach(async t => {

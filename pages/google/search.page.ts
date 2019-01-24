@@ -9,6 +9,7 @@ export default class SearchPage {
     constructor() {
         this.url = "https://www.google.com/";
         this.searchInput = XPathSelector(`//input[@title='Search']`);
+        // this.searchInput = Selector(`input[title='Search']`); /* <-- css selector  */
         this.searchButton = XPathSelector(`//input[@value='Google Search']`);
     }
 
