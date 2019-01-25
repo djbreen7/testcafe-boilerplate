@@ -6,7 +6,7 @@ export default class ReleasePage {
     newReleaseButton: Selector;
 
     constructor() {
-        this.path = "/release";
+        this.path = "#/release";
         this.newReleaseButton = XPathSelector(`//button[contains(text(),'New Release')]`);
         // this.newReleaseButton = Selector('button').withText('New Release');
     }

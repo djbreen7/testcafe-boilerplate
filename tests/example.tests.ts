@@ -5,6 +5,7 @@ import {
     recordsPage,
     releasePage
 } from '../pages'
+import { t } from 'testcafe';
 
 let searchStr: string;
 
@@ -12,8 +13,10 @@ fixture(`EXAMPLE`)
     .before(async ctx => {
     })
     .beforeEach(async t => {
-        await t.useRole(orgAdmin);
-        await t.navigateTo(config.baseUrl); // Temporary workaround - see https://github.com/DevExpress/testcafe/issues/2195
+        await t
+            .maximizeWindow()
+            .useRole(orgAdmin)
+            .navigateTo(config.baseUrl); // Temporary workaround - see https://github.com/DevExpress/testcafe/issues/2195
     })
     .after(async ctx => {
     })

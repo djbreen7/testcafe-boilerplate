@@ -6,7 +6,7 @@ export default class RecordsPage {
     requestRecordsButton: Selector;
 
     constructor() {
-        this.path = "/records/request";
+        this.path = "#/records/request";
         this.requestRecordsButton = XPathSelector(`//button[contains(text(),'Request Records')]`);
         // this.newReleaseButton = Selector('button').withText('New Release');
     }
