@@ -13,20 +13,19 @@ fixture(`EXAMPLE`)
     })
     .beforeEach(async t => {
         await t.useRole(orgAdmin);
+        await t.navigateTo(config.baseUrl); // Temporary workaround - see https://github.com/DevExpress/testcafe/issues/2195
     })
     .after(async ctx => {
     })
 
 test('Is Release Page', async t => {
-    // await t.navigateTo(releasePage.path);
-    await t.navigateTo(`${config.baseUrl}/#/release`);
+    await t.navigateTo(releasePage.path);
     
     await t.expect(releasePage.newReleaseButton.exists).ok();
 })
 
 test('Is Records Page', async t => {
-    // await t.navigateTo(recordsPage.path);
-    await t.navigateTo(`${config.baseUrl}/#/records/request`);
+    await t.navigateTo(recordsPage.path);
 
     await t.expect(recordsPage.requestRecordsButton.exists).ok();
 })
