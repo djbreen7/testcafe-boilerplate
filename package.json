@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/core-js": "^2.5.0",
+    "@types/node": "^10.12.18",
     "typescript": "^3.2.4"
   },
   "dependencies": {

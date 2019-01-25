@@ -12,9 +12,9 @@ createTestCafe('localhost', 1337, 1338)
         return runner
             .screenshots('screenshots/testsuite', true)
             .src([
-                path.resolve(__dirname, 'google/search.tests.ts')
+                path.resolve(__dirname, 'example.tests.ts')
             ])
-            .browsers([headless ? 'chrome:headless' : 'chrome --incognito'])
+            .browsers([headless ? 'chrome:headless' : 'chrome'])
             .run();
     })
     .then(async failedCount => {

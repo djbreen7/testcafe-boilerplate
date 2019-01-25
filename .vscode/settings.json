@@ -1,3 +1,4 @@
 {
     "testcafeTestRunner.workspaceRoot": "./",
+    "testcafeTestRunner.customArguments": "--env=Integration",
 }

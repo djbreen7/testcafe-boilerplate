@@ -1,3 +1,5 @@
-import SearchPage from './google/search.page';
+import RecordsPage from './records/records.page';
+import ReleasePage from './release/release.page';
 
-export const searchPage = new SearchPage();
+export const recordsPage = new RecordsPage();
+export const releasePage = new ReleasePage();
