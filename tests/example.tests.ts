@@ -7,8 +7,6 @@ import {
 } from '../pages'
 import { t } from 'testcafe';
 
-let searchStr: string;
-
 fixture(`EXAMPLE`)
     .before(async ctx => {
     })
